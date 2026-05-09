@@ -8,7 +8,7 @@
 @global-max-width: 950px;
 @pi-img-max-size: 200px;
 
-@import "bootstrap/bootstrap.less";
+@import "/css/bootstrap/bootstrap.less";
 @navbar-height: 40px;
 @navbar-margin-bottom: 0px;
 @line-height-base: 1.6;
@@ -22,11 +22,11 @@
 // @code-bg: #f8f8f8;
 // @pre-bg: #f8f8f8;
 
-@import "font-awesome/font-awesome.less";
+@import "/css/font-awesome/font-awesome.less";
 @fa-font-path: "font";
 
-@import "solarized.less";
-@import "katex.less";
+@import "/css/solarized.less";
+@import "/css/katex.less";
 
 // General Font Stuff //
 
