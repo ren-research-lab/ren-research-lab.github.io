@@ -1,0 +1,24 @@
+---
+layout: member
+title: Shaoxuan Ren
+abbrev: S. Ren
+position: Principal Investigator
+email: shaoxua3 at ualberta.ca
+scholar: cet5irIAAAAJ
+image: /images/members/shaoxuan.jpg
+---
+
+### Assitant Professor of Chemical and Materials Engineering
+
+<div class="bigspacer"></div>
+
+*Education:*
+
+- Ph.D. Chemistry, University of British Columbia, 2022
+- B.Sc. Chemistry, University of Ottawa, 2018  
+
+*Appointments:*
+
+- Assistant Professor, University of Alberta, 2026-present  
+- Research Scientist, Natural Resources Canada (NRCan), 2025-2026
+- Postdoctoral Research Fellow, University of British Columbia, 2022-2025

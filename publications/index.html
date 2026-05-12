@@ -1,43 +1,39 @@
 ---
 layout: default
-title: Riggleman Lab / Publications
+title: Ren Lab / Publications
 categories:
  - publications
 ---
 
-{% for publication in site.categories.publications %}
-  {% capture prev_year %}{{ this_year }}{% endcapture %}
-  {% capture this_year %}{{ publication.year }}{% endcapture %}
+{% assign grouped_publications = site.categories.publications | group_by_exp: "publication", "publication.year | append: '' | strip" | sort: "name" | reverse %}
 
-  {% if forloop.first %}
-    {% assign counter = 0 %}
+{% for group in grouped_publications %}
+  {% if group.name != "" %}
   <div class="row">
     <div class="col-md-12">
-      <h1>{{ this_year }}</h1>
+      <h1>{{ group.name }}</h1>
       <hr>
     </div>
   </div>
+
+  {% assign publications = group.items | sort: "date" | reverse %}
+  {% assign counter = 0 %}
+
   <div class="row">
-  {% elsif this_year != prev_year %}
-    {% assign counter = 0 %}
+  {% for publication in publications %}
+
+    {% if counter != 0 %}
+      {% assign mod = counter | modulo: 2 %}
+      {% if mod == 0 %}
   </div>
   <div class="row">
-    <div class="col-md-12">
-      <h1>{{ this_year }}</h1>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-  {% else %}
-    {% assign counter = counter | plus: 1 %}
-    {% assign mod = counter | modulo: 2 %}
-    {% if mod == 0 %}
-  </div>
-  <div class="row">
+      {% endif %}
     {% endif %}
-  {% endif %}
 
     {% include pub_box.html pub=publication %}
 
-{% endfor %}
+    {% assign counter = counter | plus: 1 %}
+  {% endfor %}
   </div>
+  {% endif %}
+{% endfor %}

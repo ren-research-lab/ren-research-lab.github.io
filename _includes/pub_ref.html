@@ -2,6 +2,9 @@
 
   {% for author in include.pub_loc.authors-short %}
     {% assign linked = false %}
+    {% assign is_co_first = false %}
+    {% assign is_corresponding = false %}
+
     {% for member in site.categories.members %}
       {% if author == member.abbrev %}
         {% capture mem_url %}{{ member.url }}{% endcapture %}
@@ -9,15 +12,23 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if include.pub_loc.co-first and forloop.index == 2 %}
-      {% assign co-first-now = true %}
-    {% else %}
-      {% assign co-first-now = false %}
-    {% endif %}
+
+    {% for coauthor in include.pub_loc.co-first-short %}
+      {% if author == coauthor %}
+        {% assign is_co_first = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% for corrauthor in include.pub_loc.corresponding-short %}
+      {% if author == corrauthor %}
+        {% assign is_corresponding = true %}
+      {% endif %}
+    {% endfor %}
+
     {% if linked %}
-      <a href="{{ mem_url }}">{{ author }}</a>{% if co-first-now %} [co-first author]{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+      <a href="{{ mem_url }}">{{ author }}</a>{% if is_co_first %}<sup>†</sup>{% endif %}{% if is_corresponding %}<sup>*</sup>{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
     {% else %}
-      {{ author }}{% if co-first-now %} [co-first author]{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+      {{ author }}{% if is_co_first %}<sup>†</sup>{% endif %}{% if is_corresponding %}<sup>*</sup>{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
     {% endif %}
   {% endfor %}
 
@@ -27,6 +38,9 @@
 
   {% for author in include.pub_loc.authors %}
     {% assign linked = false %}
+    {% assign is_co_first = false %}
+    {% assign is_corresponding = false %}
+
     {% for member in site.categories.members %}
       {% if author == member.title %}
         {% capture mem_url %}{{ member.url }}{% endcapture %}
@@ -34,15 +48,23 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    {% if include.pub_loc.co-first and forloop.index == 2 %}
-      {% assign co-first-now = true %}
-    {% else %}
-      {% assign co-first-now = false %}
-    {% endif %}
+
+    {% for coauthor in include.pub_loc.co-first %}
+      {% if author == coauthor %}
+        {% assign is_co_first = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% for corrauthor in include.pub_loc.corresponding %}
+      {% if author == corrauthor %}
+        {% assign is_corresponding = true %}
+      {% endif %}
+    {% endfor %}
+
     {% if linked %}
-      <a href="{{ mem_url }}">{{ author }}</a>{% if co-first-now %} [co-first author]{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+      <a href="{{ mem_url }}">{{ author }}</a>{% if is_co_first %}<sup>†</sup>{% endif %}{% if is_corresponding %}<sup>*</sup>{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
     {% else %}
-      {{ author }}{% if co-first-now %} [co-first author]{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
+      {{ author }}{% if is_co_first %}<sup>†</sup>{% endif %}{% if is_corresponding %}<sup>*</sup>{% endif %}{% if forloop.last %}.{% else %}, {% endif %}
     {% endif %}
   {% endfor %}
 
