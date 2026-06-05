@@ -5,14 +5,13 @@ categories:
  - contact
 ---
 
-<a href="https://goo.gl/maps/8mHk7zNrLPq"><img class="pull-right" src="/images/towne-map.png"/></a>
+<a href="https://goo.gl/maps/8mHk7zNrLPq"><img class="pull-right" src="/images/towne-map.png" width="400"/></a>
 
 <address>
-    346 Towne Building<br/>
-    220 South 33rd Street<br/>
-    University of Pennsylvania<br/>
-    Philadelphia, PA 19104<br/>
+    12th Floor Donadeo Innovation Centre for Engineering<br/>
+    University of Alberta<br/>
+    Edmonton, Alberta T6G 1H9<br/>
     <br/>
-    Phone: (215) 898-2411<br>
-    Email: rrig<span style="display:none">obfuscate</span>@seas.upenn.edu<br>
+    <!-- Phone: (215) 898-2411<br> -->
+    Email: shaoxuan.ren<span style="display:none">obfuscate</span>@ualberta.ca<br>
 </address>

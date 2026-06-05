@@ -21,13 +21,13 @@ $(window).resize(function() {
 $(document).ready(function() {
     // Change text and color of footer logo to white on mouseover
     $('#footer-logo-box').mouseover(function() {
-        $('#pennimg').attr('src','/images/upenn-footer-logo-white.png');
+        $('#pennimg').attr('src','/images/ualberta-footer-logo-white.png');
         $('#cbe-text').css('color', 'white');
     });
 
     // Change text and color of footer logo to gray on mouseout
     $('#footer-logo-box').mouseout(function() {
-        $('#pennimg').attr('src','/images/upenn-footer-logo.png');
+        $('#pennimg').attr('src','/images/ualberta-footer-logo.png');
         $('#cbe-text').css('color', '#9d9d9d');
     });
 });

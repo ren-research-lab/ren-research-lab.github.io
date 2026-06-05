@@ -14,11 +14,12 @@ image: /images/members/shaoxuan.jpg
 
 *Education:*
 
-- Ph.D. Chemistry, University of British Columbia, 2022
-- B.Sc. Chemistry, University of Ottawa, 2018  
+- Ph.D. Chemistry, University of British Columbia
+- M.Sc. Computer Science, University of Illinois - Urbana Champaign
+- B.Sc. Chemistry, University of Ottawa  
 
 *Appointments:*
 
 - Assistant Professor, University of Alberta, 2026-present  
-- Research Scientist, Natural Resources Canada (NRCan), 2025-2026
+- Research Scientist, Canadian Centre for Mineral and Energy Technology (CANMET), Natural Resources Canada, 2025-2026
 - Postdoctoral Research Fellow, University of British Columbia, 2022-2025

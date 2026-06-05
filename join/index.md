@@ -12,11 +12,11 @@ Information can be found on the
 
 ## Postdoc positions
 
-Please send Shao an e-mail with your resume, three journal articles you have published, and what you propose to work on in the Ren Lab. Please include [Postdoc_Applicant] in the subject line of your e-mail. Shao will generally review applications once a month, at the beginning of the month.
+Please send Shao an e-mail with your resume, three journal articles you have published, and what you propose to work on in the Ren Lab. Please include [Postdoc_Applicant] in the subject line of your e-mail. 
 
 ## Undergraduate research opportunities
 
 We are actively seeking motivated undergraduate students
-to work with us performing molecular modeling and simulations.
+to work with us performing electrochemistry and metallurgical research.
 If interested, please contact Prof. Ren at
 shaoxua3<span style="display:none">obfuscate</span>@ualberta.ca
