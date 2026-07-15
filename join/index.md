@@ -1,22 +1,48 @@
 ---
 layout: post
 title: Join
+categories:
+  - join
 ---
 
 ## Graduate student positions
 
-Interested grad students should apply to the
-UAlberta Chemical and Materials Engineering department.
-Information can be found on the
-[department website](https://www.ualberta.ca/en/engineering/chemical-materials-engineering/index.html).
+We welcome applications from motivated students interested in electrochemical engineering, mineral processing, and metallurgy.
 
-## Postdoc positions
+Prospective M.Sc. and Ph.D. students should apply through the Department of Chemical and Materials Engineering at the University of Alberta. Information about admission requirements, application procedures, and deadlines is available on the [department website](https://www.ualberta.ca/en/engineering/chemical-materials-engineering/graduate-studies/index.html).
 
-Please send Shao an e-mail with your resume, three journal articles you have published, and what you propose to work on in the Ren Lab. Please include [Postdoc_Applicant] in the subject line of your e-mail. 
+Prospective students are encouraged to contact Prof. Ren before applying. Please include:
 
-## Undergraduate research opportunities
+- A brief introduction and description of your research interests
+- A current CV
+- Unofficial academic transcripts
+- A short explanation of how your background and interests align with the group
 
-We are actively seeking motivated undergraduate students
-to work with us performing electrochemistry and metallurgical research.
-If interested, please contact Prof. Ren at
-shaoxua3<span style="display:none">obfuscate</span>@ualberta.ca
+Please use **[Graduate Applicant]** in the email subject line.
+
+<!-- ## Postdoc positions
+
+Researchers with relevant experience in electrochemistry, extractive metallurgy, materials chemistry, chemical engineering, or related areas may also contact Dr. Ren to discuss potential fellowship applications.
+
+Please include:
+
+- A current CV
+- A brief summary of your research experience
+- Three selected publications
+- A short description of the research direction you would like to pursue
+
+Please use **[Postdoctoral Applicant]** in the email subject line. -->
+
+## Undergraduate student positions
+
+Students interested in research courses, co-ops, summer projects, or other research opportunities should contact Dr. Ren. Please include a brief introduction, your program and year of study, relevant coursework or experience, your availability, and a current CV.
+
+Please use **[Undergraduate Applicant]** in the email subject line.
+
+## Contact
+
+Prof. Shaoxuan Ren  
+Department of Chemical and Materials Engineering  
+University of Alberta  
+
+Email: shaoxua3<span style="display:none">obfuscate</span>@ualberta.ca

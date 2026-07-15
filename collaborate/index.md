@@ -5,8 +5,4 @@ categories:
  - collaborate
 ---
 
-As a group focused on scalable experimental research,
-we are always interested in exploring new collaboration opportunities
-with industry and theoretical reseasrch groups.
-If you are interested in collaborating,
-please [get in contact with us](/contact/).
+As a group focused on scalable experimental research, we welcome opportunities to collaborate with industry partners and theoretical research groups. If you are interested in working with us, please get in [get in contact with us](/contact/).
