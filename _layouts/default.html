@@ -5,6 +5,7 @@
   <meta charset="utf-8"/>
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
 
   <!-- RSS feed -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }}"
@@ -12,6 +13,7 @@
 
   <!-- Customized Bootstrap + Font Awesome + Solarized -->
   <link href="/css/style.css" rel="stylesheet" media="screen">
+  <link href="/css/merp-theme.css" rel="stylesheet" media="screen">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -19,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="manifest" href="/favicons/site.webmanifest">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f2f0e8">
 
   <!-- Google Analytics -->
   <script type="text/javascript">
@@ -48,17 +50,13 @@
   <script src="/js/transition.js"></script>
   <script src="/js/collapse.js"></script>
 
-  <!-- Custom script to put footer at bottom even if post is short -->
-  <!-- also controls color of footer logo on mouseover -->
-  <script src="/js/footer.js"></script>
-
 </head>
 
-<body>
+<body class="site-page page-{{ page.categories.first | default: 'default' }}">
 
-  <div id="header">
+  <header id="header" class="site-header">
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
+      <div class="container site-shell">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -66,7 +64,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">PURE Research Lab @ University of Alberta</a>
+          <a class="navbar-brand site-brand" href="/" aria-label="MERP Research Lab home">
+            <span class="site-brand-mark">MERP</span>
+            <span class="site-brand-copy">
+              <strong>Resource Processing Lab</strong>
+              <small>University of Alberta</small>
+            </span>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-element">
           <ul class="nav navbar-nav navbar-right">
@@ -110,7 +114,7 @@
             {% else %}
             <li>
             {% endif %}
-              <a href="/join/">Join</a>
+              <a class="nav-join" href="/join/">Join the Lab</a>
             </li>
             {% if page.categories.first == 'photos' %}
             <li class="active">
@@ -123,50 +127,47 @@
         </div>
       </div>
     </nav>
-  </div>
+  </header>
 
-  <div id="content-wrapper">
-    <div class="container">
+  <main id="content-wrapper" class="site-main">
+    <div class="container site-content-shell">
       {{ content }}
     </div>
-  </div>
+  </main>
 
-  <div id="footer">
-    <nav class="navbar navbar-inverse text-center" role="navigation">
-      <div class="container">
-        <ul class="nav navbar-nav footernav">
-          <li>
-            <a href="/about/">About</a>
-          </li>
-          <li>
-            <a href="/contact/">Contact</a>
-          </li>
-          <li>
-            <a href="/collaborate/">Collaborate</a>
-          </li>
-          <li>
-            <a href="/join/">Join</a>
-          </li>
-        </ul>
+  <footer id="footer" class="site-footer">
+    <div class="container site-shell site-footer-grid">
+      <div class="site-footer-intro">
+        <span class="site-footer-kicker">MERP Research Lab</span>
+        <p>Multidisciplinary electrochemical processing of natural and waste-derived resources.</p>
       </div>
-      <div id="footer-logo-box" class="container">
-        <ul class="nav navbar-nav footernav">
-          <li>
-            <a id="cbe-text" href="https://www.ualberta.ca/en/engineering/chemical-materials-engineering/">
-              University of Alberta</br>
-              Chemical and Materials Engineering Department</br>
-            </a>
-          </li>
-        </ul>
-        <div id="footer-logo" class="center-block">
+
+      <nav class="site-footer-nav" aria-label="Footer navigation">
+        <a href="/research/">Research</a>
+        <a href="/publications/">Publications</a>
+        <a href="/members/">Members</a>
+        <a href="/join/">Join</a>
+        <a href="/contact/">Contact</a>
+        <a href="/collaborate/">Collaborate</a>
+      </nav>
+
+      <div id="footer-logo-box" class="site-footer-university">
+        <a id="cbe-text" href="https://www.ualberta.ca/en/engineering/chemical-materials-engineering/">
+          Department of Chemical and Materials Engineering
+        </a>
+        <div id="footer-logo">
           <a href="https://www.ualberta.ca/en/engineering/chemical-materials-engineering/">
-            <img id="pennimg" src="/images/ualberta-footer-logo.png">
+            <img id="pennimg" src="/images/ualberta-footer-logo-white.png" alt="University of Alberta">
           </a>
         </div>
       </div>
-      <div class="spacer"></div>
-    </nav>
-  </div>
+    </div>
+
+    <div class="container site-shell site-footer-meta">
+      <span>&copy; {{ site.time | date: '%Y' }} MERP Research Lab</span>
+      <span>Edmonton, Alberta, Canada</span>
+    </div>
+  </footer>
 
 </body>
 </html>

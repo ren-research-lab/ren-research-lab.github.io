@@ -21,5 +21,5 @@ image: /images/members/shaoxuan.jpg
 *Appointments:*
 
 - Assistant Professor, University of Alberta, 2026-present  
-- Research Scientist, Canadian Centre for Mineral and Energy Technology (CANMET), Natural Resources Canada, 2025-2026
+- Research Scientist, Natural Resources Canada, 2025-2026
 - Postdoctoral Research Fellow, University of British Columbia, 2022-2025
