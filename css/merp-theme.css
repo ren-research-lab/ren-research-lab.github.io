@@ -882,6 +882,21 @@ body.site-page:not(.page-home) .site-content-shell {
   align-items: start;
 }
 
+/* Bootstrap adds clearfix pseudo-elements to every .container. Inside a
+   CSS grid/flex container they become real layout items and displace the
+   footer columns, so they must be removed here. */
+.site-footer-grid::before,
+.site-footer-grid::after,
+.site-footer-meta::before,
+.site-footer-meta::after {
+  display: none;
+  content: none;
+}
+
+.site-footer-grid > * {
+  min-width: 0;
+}
+
 .site-footer-kicker {
   display: block;
   margin-bottom: 16px;
@@ -937,7 +952,8 @@ body.site-page:not(.page-home) .site-content-shell {
   width: auto;
   max-width: 270px;
   height: 52px;
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin-right: 0;
   object-fit: contain;
 }
 
@@ -950,6 +966,17 @@ body.site-page:not(.page-home) .site-content-shell {
   color: rgba(255, 255, 255, 0.42);
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.site-footer .site-footer-credit {
+  color: rgba(255, 255, 255, 0.42);
+  text-decoration: none;
+}
+
+.site-footer .site-footer-credit:hover,
+.site-footer .site-footer-credit:focus {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: underline;
 }
 
 /* Tablet */
